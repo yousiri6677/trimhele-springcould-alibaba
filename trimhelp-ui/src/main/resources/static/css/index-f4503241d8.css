@@ -18,8 +18,6 @@
 
 .gray {
     -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray
@@ -560,7 +558,6 @@
     -moz-transition: all .7s;
     -ms-transition: all .7s;
     -o-transition: all .7s;
-    transform: all .7s
 }
 
 .zzx-company-tj {
@@ -714,10 +711,6 @@
 }
 
 .zzx-company-list:hover .zzx-company-bag {
-    -webkit-transition: scale(1.1);
-    -moz-transition: scale(1.1);
-    -ms-transition: scale(1.1);
-    -o-transition: scale(1.1);
     transform: scale(1.1)
 }
 
