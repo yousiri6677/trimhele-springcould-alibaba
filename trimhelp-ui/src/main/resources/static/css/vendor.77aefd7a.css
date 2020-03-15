@@ -1,0 +1,353 @@
+html {
+    overflow-y: scroll;
+    overflow: hidden/9
+}
+
+body {
+    background-color: #fff
+}
+
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0
+}
+
+body, button, input, select, textarea {
+    color: #333;
+    font: 12px/1.5 "Source Han Sans SC", "HanHei SC", "PingFang SC", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "Arial", sans-serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+address, cite, dfn, em, var {
+    font-style: normal
+}
+
+dl, ol, ul {
+    list-style: none
+}
+
+a {
+    color: #666;
+    font-family: "Source Han Sans SC", "HanHei SC", "PingFang SC", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "Arial", sans-serif;
+    outline: none;
+    cursor: pointer
+}
+
+a, a:active, a:hover {
+    text-decoration: none
+}
+
+img {
+    border: 0
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    font-family: "Source Han Sans SC", "HanHei SC", "PingFang SC", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "Arial", sans-serif;
+    outline: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: " ";
+    visibility: hidden
+}
+
+.global-wrap {
+    position: relative;
+    min-height: 100%;
+    clear: both
+}
+
+.ielt7 .global-wrap {
+    height: 100%
+}
+
+.ect {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.content-wrapper {
+    width: 1220px;
+    margin: 0 auto
+}
+
+@media screen and (min-width: 1460px) {
+    .content-wrapper {
+        width: 1460px
+    }
+}
+
+.global-wrap .header {
+    width: 100%
+}
+
+iframe#clsIframe {
+    position: absolute
+}
+
+#popupContainer {
+    display: none
+}
+
+.global-bg {
+}
+
+.common-icon {
+    background-repeat: no-repeat
+}
+
+.breadcrumb {
+    padding: 10px 0;
+    font-size: 12px
+}
+
+.breadcrumb li {
+    float: left;
+    height: 20px;
+    margin-right: 8px;
+    line-height: 20px
+}
+
+.breadcrumb .breadcrumb-pre a {
+    float: left;
+    color: #999
+}
+
+.breadcrumb .breadcrumb-list-parent {
+    float: left
+}
+
+.breadcrumb a .icon-breadcrumb {
+    position: relative;
+    float: left;
+    width: 8px;
+    height: 5px;
+    margin-top: 7px;
+    background-position: -152px -180px;
+    margin-left: 5px
+}
+
+.breadcrumb .breadcrumb-pre a:hover {
+    color: #f25618
+}
+
+.breadcrumb .breadcrumb-last {
+    width: 669px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.breadcrumb .breadcrumb-arrow {
+    float: left;
+    width: 5px;
+    height: 9px;
+    margin: 6px 0 0 7px;
+    background-position: -24px -672px
+}
+
+.breadcrumb-pre-list {
+    position: relative;
+    z-index: 11
+}
+
+.breadcrumb .breadcrumb-list {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: none;
+    min-width: 60px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.breadcrumb-list ul {
+    overflow: hidden
+}
+
+.breadcrumb-list ul li {
+    margin: 0
+}
+
+.breadcrumb .breadcrumb-list a {
+    display: block;
+    float: none;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap
+}
+
+.pages {
+    margin-top: 0 !important;
+    margin-bottom: 30px;
+    padding-top: 35px;
+    text-align: center;
+    clear: both
+}
+
+.pages a, .pages em, .pages strong {
+    display: -moz-inline-box;
+    display: inline-block;
+    height: 32px;
+    margin: 0 0 0 -1px !important;
+    padding: 3px 6px;
+    line-height: 32px
+}
+
+.pages em {
+    display: none !important;
+    margin-right: 20px
+}
+
+.pages input {
+    width: 30px;
+    height: 18px;
+    vertical-align: bottom
+}
+
+.pages a {
+    width: 26px;
+    color: #999 !important;
+    background-color: #fff;
+    border: 1px solid #eee !important
+}
+
+.pages a:hover {
+    color: #01af63 !important
+}
+
+.pages i {
+    display: -moz-inline-box;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 34px
+}
+
+.pages strong {
+    width: 28px;
+    height: 34px;
+    color: #fff !important;
+    font-weight: 400 !important;
+    line-height: 34px;
+    background-color: #01af63 !important;
+    border: 0 !important
+}
+
+.ielt8 .pages strong {
+    vertical-align: 1px
+}
+
+.pages .next, .pages .prev {
+    position: relative;
+    width: 79px
+}
+
+.pages .next b, .pages .prev b {
+    position: absolute;
+    width: 6px;
+    height: 11px;
+    margin-top: 11px;
+}
+
+.ielt8 .pages .next b, .ielt8 .pages .prev b {
+    top: 3px
+}
+
+.pages .prev b {
+    left: 15px;
+    float: left;
+    background-position: -173px 0
+}
+
+.pages .next b {
+    right: 15px;
+    float: right;
+    background-position: -180px 0
+}
+
+.pages .prev:hover b, .pages_s a.prev:hover {
+    background-position: -187px 0
+}
+
+.pages .next:hover b, .pages_s a.next:hover {
+    background-position: -194px 0
+}
+
+.img-position {
+    position: relative;
+    overflow: hidden
+}
+
+.img-position-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0
+}
+
+.img-position-box img {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    display: block
+}
+
+.img-position-box.fix-width {
+    width: 100%
+}
+
+.img-position-box.fix-height {
+    height: 100%
+}
+
+.img-position-box.fix-width img {
+    width: 100%
+}
+
+.img-position-box.fix-height img {
+    height: 100%
+}
+
+.img-position-box img.img-hidden {
+    position: static;
+    visibility: hidden
+}
+
+span.t8t-error {
+    position: absolute;
+    display: block;
+    padding-top: 1px;
+    font-size: 12px;
+    color: #ff6767;
+    padding-left: 16px
+}
+
+input.t8t-error {
+    border: 1px solid #ff6767
+}
