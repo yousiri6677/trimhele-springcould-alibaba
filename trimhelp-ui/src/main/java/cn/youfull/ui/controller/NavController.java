@@ -11,4 +11,30 @@ public class NavController {
         return "login";
     }
 
+    @RequestMapping("/index")
+    public String index(){
+        return "index";
+    }
+
+    @RequestMapping("/toRegister")
+    public String toregister(){
+        return "register";
+    }
+
+
+
+    @RequestMapping("/toRelease")
+    public String torelease(){
+        return "release";
+    }
+
+
+    @RequestMapping("/toProjectHall")
+    public String toprojectHall(){
+        return "projectHall";
+    }
+
+
+
+
 }

@@ -1,4 +1,4 @@
-<html class="no-js" lang="zh" dir="ltr">
+<html class="no-js" lang="zh" dir="ltr" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta name="viewport"
@@ -56,7 +56,7 @@
 
         gtag('config', 'UA-131295055-1');
     </script>
-
+    <link href="css/layui.css" rel="stylesheet" type="text/css"/>
     <link href="css/vendor.67e5b30a.css" rel="stylesheet">
     <link href="css/list.1a14545a.css" rel="stylesheet">
     <title>项目大厅-开源众包</title>
@@ -3177,8 +3177,9 @@
     <link type="text/css" rel="stylesheet" href="css/chatStyle.css">
 </head>
 <body>
-<iframe src="Navigation.html" style="width:100%; height: 80px" frameborder="0" noresize="" framespacing="6"
-        bordercolor="#0000FF"></iframe>
+<!--<iframe src="Navigation.html" style="width:100%; height: 80px" frameborder="0" noresize="" framespacing="6"-->
+<!--        bordercolor="#0000FF"></iframe>-->
+<ul th:replace="Navigation::nav"></ul>
 <div id="list">
     <div class="hidden-xs-only">
         <div data-v-b59f93d4="" style="padding-top: 16px; background-color: rgb(249, 250, 253);">
