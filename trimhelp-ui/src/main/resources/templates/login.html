@@ -438,15 +438,14 @@
                 </div>
 
                 <div class="login_wrap" style="">
-                    <form autocomplete="off" id="reg_form" class="new_reg_form reg_form"
-                          method="post">
+                    <form autocomplete="off" action="/login" id="reg_form" class="new_reg_form reg_form" method="post">
 
                         <div class="login_select">
-                            <input type="text" id="userName" class="login-name input-holder-style"
+                            <input type="text" id="account" name="account" class="input-holder-style"
                                    placeholder="用户名/手机号" autocomplete="off" value="" style="height: 30px;border-color: rgb(221, 221, 221);">
                         </div>
                         <div class="login_select  ">
-                            <input class="input-holder-style" type="password" id="userNum" autocomplete="off" value=""
+                            <input class="input-holder-style" type="password" id="passWord" name="passWord" autocomplete="off" value=""
                                    style="height: 30px"
                                    placeholder="密码">
                         </div>

@@ -120,25 +120,24 @@
             </li>-->
         </ul>
     </div>
-    <form method="post" class="new_reg_form reg_form yezhu_reg" id="reg_form" autocomplete="off">
+    <form method="post" action="/register" class="new_reg_form reg_form yezhu_reg" id="reg_form" autocomplete="off">
         <input type="hidden" value="" name="indentity" id="indentity">
         <div class="weixin-reg-boxer" style="display: block;">
             <div class="login_wrap" style="display: block;">
                 <div class="login_select cl height_auto">
-                    <input type="text" id="emailAndPhone" autocomplete="off" value="" style="border-color: rgb(255, 103, 103);">
+                    <input type="text" name="" id="emailAndPhone" autocomplete="off" value="" style="border-color: rgb(255, 103, 103);">
                     <input type="hidden" id="ras_emailAndPhone" name="mobile">
                     <span style="display: block;">手机号</span>
                     <div class="index_check"><em class=""></em><!--请输入手机号码--></div></div>
                 <div class="login_select cl">
-                    <input type="text" id="userName" autocomplete="off" value="" style="border-color: rgb(221, 221, 221);"><span style="display: block;">用户名</span>
-                    <input type="hidden" id="rsa_userName" name="username">
+                    <input type="text" id="userName" name="account" autocomplete="off" value="" style="border-color: rgb(221, 221, 221);" placeholder="用户名">
+<!--                    <input type="hidden" id="rsa_userName" name="username">-->
                 </div>
                 <div class="login_select cl" style="margin-bottom: 20px;">
-                    <span style="display: block;">密码</span>
-                    <input type="text" autocomplete="off" class="reg_text" style="border-color: rgb(221, 221, 221); display: none;">
-                    <input type="password" id="useNum" value="" autocomplete="off" style="border-color: rgb(221, 221, 221);">
-                    <input type="hidden" id="ras_useNum" name="password1">
-                    <span style="">密码</span>
+<!--                    <span style="display: block;">密码</span>-->
+<!--                    <input type="text" autocomplete="off" class="reg_text" style="border-color: rgb(221, 221, 221); display: none;">-->
+                    <input type="password" id="useNum" name="passWord" value="" placeholder="密码" autocomplete="off" style="border-color: rgb(221, 221, 221);">
+<!--                    <input type="hidden" id="ras_useNum" name="password1">-->
                 </div>
                 <div class="login_select cl ls_yzm">
                     <input type="text" id="autoCode" class="autoCode" autocomplete="off" name="mobile_yzm">
@@ -164,7 +163,7 @@
 <label>我已阅读并接受<a href="//www.to8to.com/about/noticedetail.html?type=service" rel="nofollow" target="_blank">《土巴兔用户服务协议》</a>、<a href="//www.to8to.com/about/noticedetail.html?type=privacy" rel="nofollow" target="_blank">《隐私政策》</a></label>
 </span>
                 </div>
-                <a href="javascript:void(0);" class="btn_login">立即注册</a>
+                <button type="submit"  class="btn_login">立即注册</button>
 
             </div>
         </div>
