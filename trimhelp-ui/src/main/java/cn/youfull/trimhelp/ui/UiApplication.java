@@ -1,4 +1,4 @@
-package cn.youfull.ui;
+package cn.youfull.trimhelp.ui;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

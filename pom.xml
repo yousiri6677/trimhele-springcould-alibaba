@@ -28,8 +28,8 @@
     <modules>
         <module>trimhelp-dependencies</module>
         <module>trimhelp-commons</module>
-        <module>trimhelp-domain</module>
-        <module>trimhelp-commons-mapper</module>
+        <module>trimhelp-entity</module>
+        <module>trimhelp-commons-mappers</module>
         <module>trimhelp-ui</module>
         <module>trimhelp-user-provider</module>
     </modules>

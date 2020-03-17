@@ -10,10 +10,15 @@
         <relativePath>../trimhelp-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>trimhelp-commons-mapper</artifactId>
+    <artifactId>trimhelp-commons-mappers</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${hikaricp.version}</version>
+        </dependency>
 
         <!-- Spring Boot End -->
         <dependency>
@@ -25,26 +30,25 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.19</version>
+            <version>${mysql.version}</version>
             <scope>runtime</scope>
         </dependency>
         <!-- Commons End -->
-
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>0.9.0.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-            <version>2.1.0.RELEASE</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+          <!--  <exclusions>
+                <exclusion>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>tomcat-jdbc</artifactId>
+                </exclusion>
+            </exclusions>-->
         </dependency>
 
         <!-- Projects Begin -->
         <dependency>
             <groupId>cn.youfull</groupId>
-            <artifactId>trimhelp-domain</artifactId>
+            <artifactId>trimhelp-entity</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <!-- Projects End -->

@@ -9,5 +9,5 @@ spring:
     cache: false
 
 server:
-  port: 8084
+  port: 8081
 

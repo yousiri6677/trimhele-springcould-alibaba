@@ -10,7 +10,7 @@
         <relativePath>../trimhelp-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>trimhelp-domain</artifactId>
+    <artifactId>trimhelp-entity</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>

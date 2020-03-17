@@ -1,7 +1,7 @@
-package cn.youfull.ui.controller;
+package cn.youfull.trimhelp.ui.controller;
 
 import cn.youfull.trimhelp.entity.User;
-import cn.youfull.ui.service.UserService;
+import cn.youfull.trimhelp.ui.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
