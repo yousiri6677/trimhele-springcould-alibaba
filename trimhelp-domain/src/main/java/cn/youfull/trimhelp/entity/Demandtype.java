@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="demandtype")
-public class demandtype {
+public class Demandtype {
 
 
     private  long id;

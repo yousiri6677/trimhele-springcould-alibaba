@@ -10,19 +10,17 @@
         <relativePath>../trimhelp-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>trimhelp-domain</artifactId>
+    <artifactId>trimhelp-user-provider</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
 
-        <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>javax.persistence-api</artifactId>
-        </dependency>
+        <!-- Projects Begin -->
         <dependency>
             <groupId>cn.youfull</groupId>
-            <artifactId>trimhelp-commons</artifactId>
+            <artifactId>trimhelp-commons-mapper</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
+        <!-- Projects End -->
     </dependencies>
 </project>

@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="demand")
-public class demand {
+public class Demand {
     private long id;
     private String title;
     private String content;

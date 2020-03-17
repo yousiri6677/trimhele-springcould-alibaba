@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="decoratecase")
-public class decoratecase {
+public class Decoratecase {
     private long id;
     private long companyId;
     private long imgId;

@@ -1,4 +1,5 @@
-package cn.youfull.ui.mapper;
+package cn.youfull.trimhelp.mapper;
+
 
 import cn.youfull.trimhelp.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

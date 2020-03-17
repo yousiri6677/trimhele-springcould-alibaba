@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class NavController {
 
     @Autowired
-    public UserService userService;
+    private UserService userService;
 
     @RequestMapping("/toLogin")
     public String toLogin(){

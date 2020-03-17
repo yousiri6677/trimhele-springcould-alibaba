@@ -31,6 +31,7 @@
         <module>trimhelp-domain</module>
         <module>trimhelp-commons-mapper</module>
         <module>trimhelp-ui</module>
+        <module>trimhelp-user-provider</module>
     </modules>
     <!--开源协议-->
     <licenses>

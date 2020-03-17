@@ -1,11 +1,11 @@
-package cn.youfull.ui.service;
+package cn.youfull.trimhelp.user.provider.service.impl;
 
 import cn.youfull.trimhelp.entity.User;
-import cn.youfull.ui.mapper.UserMapper;
+import cn.youfull.trimhelp.mapper.UserMapper;
+import cn.youfull.trimhelp.user.provider.service.UserService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
-    public User loginByAccountAndPassWord(String account,String passWord) {
+    public User loginByAccountAndPassWord(String account, String passWord) {
         QueryWrapper<User> qw = new QueryWrapper<>();
         qw.eq("account",account);
         qw.eq("passWord",passWord);
@@ -28,4 +28,5 @@ public class UserServiceImpl implements UserService {
         int count = userMapper.insert(user);
         return count;
     }
+
 }

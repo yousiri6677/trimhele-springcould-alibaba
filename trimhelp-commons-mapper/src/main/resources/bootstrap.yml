@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: trimhelp-commons-mapper
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.105.174.82:8848
+
+server:
+  port: 8084
+
+mybatis-plus:
+  type-aliases-package: cn.youfull.trimhelp.entity
+  configuration:
+    map-underscore-to-camel-case: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    enable-sql-runner: true
+
