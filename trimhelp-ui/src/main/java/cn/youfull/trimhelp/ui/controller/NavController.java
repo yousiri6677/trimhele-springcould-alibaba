@@ -4,9 +4,7 @@ import cn.youfull.trimhelp.entity.User;
 import cn.youfull.trimhelp.ui.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.activation.DataSource;
 import javax.annotation.Resource;
@@ -24,12 +22,12 @@ public class NavController {
     @Resource
     private UserService userService;
 
-    @RequestMapping("toLogin")
+    @RequestMapping("/toLogin")
     public String toLogin(){
         return "login";
     }
 
-    @RequestMapping("login")
+    @RequestMapping("/login")
     public String login(String account,String passWord){
         User user = userService.loginByAccountAndPassWord(account, passWord);
         if (user!=null){
@@ -53,7 +51,7 @@ public class NavController {
 
 
     @RequestMapping("/register")
-    public String register(User user){
+    public String register(@RequestParam("user") User user){
         int i = userService.addUser(user);
         if (i>0){
             return "login";

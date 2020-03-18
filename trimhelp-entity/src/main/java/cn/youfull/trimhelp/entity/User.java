@@ -5,12 +5,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Table;
+import java.io.Serializable;
 
+/**
+ *
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="user")
-public class User {
+public class User implements Serializable  {
+
+    private static final long serialVersionUID = -90000032L;
     private long id;
     private String userName;
     private String account;

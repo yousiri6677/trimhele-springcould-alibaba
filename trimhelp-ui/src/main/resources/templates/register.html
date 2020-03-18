@@ -64,47 +64,6 @@
 <body class="narrow_980" style="">
 <div class="global_wrap" id="gloWrap">
 
-<!--<div class="header">
-    <div class="header_top">
-        <div class="header_top_center">
-            <div class="header_top_right">
-                <ul>
-                    <li>
-                        <label id="nav_user_data">
-                            <a href="/toLogin" class="htr_login" rel="nofollow">登录</a>
-                            <a href="/toRegister" class="htr_reg" rel="nofollow">注册</a>
-                        </label>
-                        <span class="htr_line"></span>
-                        <a href="https://www.to8to.com/com_login.php" class="" rel="nofollow">装修公司登录</a>
-                        <span class="htr_line"></span>
-                        <a href="http://sz.to8to.com/zb/" class="nav_fzlink" rel="nofollow">我要装修</a>
-                        <span class="htr_line"></span>
-                        <a href="http://www.to8to.com/about/shangwu.php" rel="nofollow">装修公司合作</a>
-                        <em>咨询热线：4006-900-288 </em>
-                    </li>
-                </ul>
-            </div>
-            <div class="header_top_left">
-                <ul>
-                    <li>
-                        <em></em>
-                        <label id="current_city">深圳</label>
-                        <a href="http://www.to8to.com/index.html">[切换]</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="header_center">
-        <div class="header_center_container">
-<span class="hcc_logo">
-<a href="http://www.to8to.com" class="logo">土巴兔装修网</a>
-</span>
-            <span class="hcc_title">欢迎注册</span>
-        </div>
-    </div>
-</div>-->
     <ul th:replace="Navigation::nav"></ul>
 <div class="login_img fl">
     <img src="//img.to8to.com/decorate_gallery/images/confirm/zcdl_img.jpg?v=20141104" width="390" height="310" alt="美好生活从这里开始">
@@ -131,13 +90,9 @@
                     <div class="index_check"><em class=""></em><!--请输入手机号码--></div></div>
                 <div class="login_select cl">
                     <input type="text" id="userName" name="account" autocomplete="off" value="" style="border-color: rgb(221, 221, 221);" placeholder="用户名">
-<!--                    <input type="hidden" id="rsa_userName" name="username">-->
                 </div>
                 <div class="login_select cl" style="margin-bottom: 20px;">
-<!--                    <span style="display: block;">密码</span>-->
-<!--                    <input type="text" autocomplete="off" class="reg_text" style="border-color: rgb(221, 221, 221); display: none;">-->
                     <input type="password" id="useNum" name="passWord" value="" placeholder="密码" autocomplete="off" style="border-color: rgb(221, 221, 221);">
-<!--                    <input type="hidden" id="ras_useNum" name="password1">-->
                 </div>
                 <div class="login_select cl ls_yzm">
                     <input type="text" id="autoCode" class="autoCode" autocomplete="off" name="mobile_yzm">
@@ -171,7 +126,7 @@
 
 
 </div>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 //协议弹框
 /*new Agreement({type:'reg'});*/
 
@@ -585,110 +540,8 @@ function register_supplier() {
 }
 
 /*/////////////////////////注册供应商逻辑end*/
-</script>
+</script>-->
     <!--引入footer部分-->
     <div th:replace="footer::footer"></div>
-
-<!--<script type="text/javascript">
-    jQuery(function() {
-        href_url = window.location.href;
-        if (!(href_url.indexOf('sz.to8to.com') !== -1 || href_url.indexOf('www.to8to.com') !== -1)) {
-            jq('.fbc_ico1').hide();
-        }
-        try {
-            var footObj = document.getElementById('footerHeight'),
-                    wrapObj = document.getElementById('gloWrap'),
-                    htmlObj = document.documentElement,
-                    bodyObj = document.body,
-                    windowHeight = htmlObj.clientHeight || bodyObj.clientHeight,
-                    docScrollHeihgt = htmlObj.scrollHeight > bodyObj.scrollHeight ? bodyObj.scrollHeight : htmlObj.scrollHeight,
-                    wrapHeight = wrapObj.offsetHeight,
-                    cb = (function() {
-                        var u = window.navigator.userAgent.toLocaleLowerCase(),
-                                msie = /(msie) ([\d.]+)/,
-                                chrome = /(chrome)\/([\d.]+)/,
-                                firefox = /(firefox)\/([\d.]+)/,
-                                safari = /(safari)\/([\d.]+)/,
-                                opera = /(opera)\/([\d.]+)/,
-                                ie11 = /(trident)\/([\d.]+)/,
-                                b = u.match(msie) || u.match(chrome) || u.match(firefox) || u.match(safari) || u.match(opera) || u.match(ie11);
-                        return {
-                            name: b[1],
-                            version: parseInt(b[2])
-                        };
-                    })();
-            if (docScrollHeihgt < windowHeight) { //文档高度小于窗口高度
-                var outWrapHeight = docScrollHeihgt - wrapHeight;
-                if (cb.version < 8 && cb.name == 'msie') {
-                    footObj.style.position = 'absolute';
-                    htmlObj.style.overflowY = 'hidden';
-                } else {
-                    footObj.style.position = 'fixed';
-                }
-
-                wrapObj.style.height = (windowHeight - outWrapHeight) + "px";
-                footObj.style.bottom = 0;
-            }
-        } catch (e) {
-
-        }
-    });
-</script>
-<script type="text/javascript">
-    var gpm = new GlobalProvincesModule;
-    try {
-        headerFooter.init();
-    } catch (e) {}
-</script>
-<script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?dbdd94468cf0ef471455c47f380f58d2";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>-->
 </div>
-
-<!--
-<script>
-    jq('.zxzs-set').click(function(e) {
-        e.preventDefault();
-        var ptag = jq(this).attr('dataptag');
-        (typeof clickStream !== 'undefined') && clickStream.getCvParams(ptag); //埋点
-        window.location.href = jq(this).attr('href');
-    });
-    if (jq('.advertising-flag-normal').length || jq('.advertising-flag-new').length) { //增加广告标识
-        var adClass = jq('.advertising-flag-normal').length ? jq('.advertising-flag-normal') : jq('.advertising-flag-new'), //标识为需要加入广告的节点
-                adHtml = jq('.advertising-flag-normal').length ? '<div class="advertising-flag"></div>' : '<div class="advertising-flag-banner"></div>';
-
-        //加入广告标识
-        adClass.each(function() {
-            jq(this).append(adHtml);
-        });
-    }
-</script>
-<script>
-    window.t8tc = new T8TCount({
-        //应用名称
-        app: 'to8to_pc'
-    });
-    window.ServiceBar && ServiceBar.init();
-</script><div class="service-bar first-screen"><div class="service__form__initial"><a href="javascript:void(0)" class="service-item"><i class="service-icons icon-design"></i></a><a href="javascript:void(0)" class="service-item"><i class="service-icons icon-decorate"></i></a><a href="javascript:void(0)" class="service-item"><i class="service-icons icon-build"></i></a><a href="javascript:void(0)" class="service-item"><i class="service-icons icon-qualitycheck"></i></a><a href="javascript:void(0)" class="service-item"><i class="service-icons icon-coroperate"></i></a><a href="javascript:void(0)" class="service-item"><i class="service-icons icon-feeback"></i></a></div><div class="service__form service__form&#45;&#45;hide" style="top: auto; bottom: 80px;"><div class="service__form__box"><div class="service__form__sort service__hover"><i class="service__form__icons service__form__design"></i></div><div class="service__form__sort service__hover"><i class="service__form__icons service__form__decorate"></i></div><div class="service__form__sort service__hover"><i class="service__form__icons service__form__build"></i></div><div class="service__form__sort service__hover"><i class="service__form__icons service__form__qualitycheck"></i></div><div class="service__form__sort service__hover"><i class="service__form__icons service__form__coroperate"></i></div><div class="service__form__sort service__hover"><i class="service__form__icons service__form__feeback"></i></div><div class="service__form__sort"><i class="service__form__icons service__form__code"></i><div class="service__form__attention"><div class="service__attention__box"><div class="service__attention__item"><span class="attention__item__img attention__item__img__app"></span><p class="attention__app">下载土巴兔APP<br>查看业主真实日记</p></div><div class="service__attention__item"><span class="attention__item__img attention__item__img__t8t"></span><p class="attention__wx">扫微信获10000套<br>家居设计案例</p></div></div></div></div><div class="service__form__sort"><i class="service__form__icons service__form__bjjs"></i></div><div class="service__form__sort"><i class="service__form__icons service__form__back"></i></div></div><div class="service__form__chat"><img class="service__chat__bg" src="//img.to8to.com/to8to_pc/common/modules/service_bar/chat_bg.jpg"><div class="service__chat__box"><span class="service__chat__title"></span><span class="service__chat__headline"></span><p class="service__chat__detail"></p><img src="" class="service__chat__photo"><span class="service__form__icons"></span><p class="service__chat__hint"></p><span class="service__chat__time"></span></div></div></div></div>
-<script>
-    try {
-        T8TTracker.init({
-            app_name: 'to8to_pc'        })
-    } catch (error) {
-
-    }
-</script>
--->
-
-
-
-<!--
-<div id="popupMask"></div><div id="popupContainer"><div id="popupInner"><div id="popupTitleBar"><div id="popupTitle"></div><div id="popupControls"><span onclick="hidePopWin(true);" id="popCloseBox" style="background:url(//img.to8to.com/front_end/bg/new_yz_jl_bg.png) no-repeat 0 -297px;width:32px;height:32px;display:block;"></span> </div></div><iframe src="//static.to8to.com/gb_js/popuploading.html" style="width:100%;height:100%;background-color:transparent;" scrolling="auto" frameborder="0" allowtransparency="true" id="popupFrame" name="popupFrame" width="100%" height="100%"></iframe></div></div><div class="slide-help-new frist-screen" style="bottom: 144px; display: none;"><a href="javascript:void(0)" class="help-icon help-icon-attention"><span class="help-attention-wrapper"><i class="icon-attention"></i></span></a><a href="javascript:void(0)" id="help-icon-quoted" class="help-icon ico-quoted"><span class="help-icon-hover"><span class="help-icon-text">报价计算</span></span><span class="help-icon-wrapper"><i class="icon-quoted"></i></span></a><a href="javascript:void(0)" class="help-icon help-icon-backtop"><span class="help-icon-hover"><span class="help-icon-text">返回顶部</span></span><span class="help-icon-wrapper"><i class="icon-backtop"></i></span></a><div class="slide-attention"><div class="attention-box attention-top"><div class="attention-item"><span class="attention-item-img attention-item-img-app"></span><p class="attention-app">下载土巴兔APP<br>查看业主真实装修日记</p></div><div class="attention-item"><span class="attention-item-img attention-item-img-t8t"></span><p class="attention-wx">扫微信，获10000套家居设计案例</p></div></div></div></div><iframe frameborder="0" height="0" name="frm_dealer" id="clsIframe"></iframe><form action="//www.to8to.com/count/a682ab23d4b4c95f84c744b2826419cd.php" method="POST" id="frm_dealer" target="frm_dealer"><input type="hidden" id="clickValId" name="key" value="{&quot;pv&quot;:{&quot;lu&quot;:&quot;https://www.to8to.com/yezhu/zxbj.php?utm_source=pc_baidupz&amp;pos=1&quot;,&quot;ly&quot;:1,&quot;vt&quot;:&quot;20191215152806.108&quot;,&quot;cd&quot;:&quot;157639451792783377&quot;,&quot;gu&quot;:&quot;https://www.to8to.com/reg/reg_new.php&quot;,&quot;ov&quot;:&quot;01&quot;,&quot;ds&quot;:&quot;1366*768&quot;,&quot;lt&quot;:&quot;20191215152842.706&quot;},&quot;cv&quot;:{},&quot;cid&quot;:&quot;cf98d0cac910a71e5b1aaef6268ecb1d651165&quot;}"></form><div class="layer-4" id="YSF-BTN-HOLDER" style="display: none;"><div id="YSF-CUSTOM-ENTRY-4"><img src="https://qiyukf.nosdn.127.net/sdk/res/kefu/custom/4.png"></div><span id="YSF-BTN-CIRCLE"></span><div id="YSF-BTN-BUBBLE"><div id="YSF-BTN-CONTENT"></div><span id="YSF-BTN-ARROW"></span><span id="YSF-BTN-CLOSE"></span></div></div><div id="YSF-PANEL-CORPINFO" class="ysf-chat-layer" data-switch="0"></div></body>
--->
 </html>

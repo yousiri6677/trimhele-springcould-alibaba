@@ -23,3 +23,7 @@ spring:
 server:
   port: 8082
 
+mybatis-plus:
+  type-aliases-package: cn.youfull.trimhelp.entity
+  configuration:
+    map-underscore-to-camel-case: false
