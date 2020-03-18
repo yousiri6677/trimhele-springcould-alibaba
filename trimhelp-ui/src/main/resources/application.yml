@@ -7,6 +7,9 @@ spring:
         server-addr: 47.105.174.82:8848
   thymeleaf:
     cache: false
+    prefix: classpath:/templates/  #prefix：指定模板所在的目录
+    suffix:  .html
+    mode: LEGACYHTML5
 
 server:
   port: 8081

@@ -173,22 +173,18 @@
         <!-- 资源文件配置 -->
         <resources>
             <resource>
-                <directory>src/main/java</directory>
+                <directory>src/main/java</directory><!--java文件的路径-->
                 <includes>
-                    <include>**/*.yml</include>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
+                    <include>**/*.*</include>
                 </includes>
-                <filtering>false</filtering>
+                <!-- <filtering>false</filtering>-->
             </resource>
             <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/resources</directory><!--资源文件的路径-->
                 <includes>
-                    <include>**/*.yml</include>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
+                    <include>**/*.*</include>
                 </includes>
-                <filtering>false</filtering>
+                <!-- <filtering>false</filtering>-->
             </resource>
         </resources>
     </build>

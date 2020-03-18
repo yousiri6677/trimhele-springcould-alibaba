@@ -14,11 +14,6 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>${hikaricp.version}</version>
-        </dependency>
 
         <!-- Spring Boot End -->
         <dependency>
@@ -34,17 +29,6 @@
             <scope>runtime</scope>
         </dependency>
         <!-- Commons End -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-          <!--  <exclusions>
-                <exclusion>
-                    <groupId>org.apache.tomcat</groupId>
-                    <artifactId>tomcat-jdbc</artifactId>
-                </exclusion>
-            </exclusions>-->
-        </dependency>
-
         <!-- Projects Begin -->
         <dependency>
             <groupId>cn.youfull</groupId>

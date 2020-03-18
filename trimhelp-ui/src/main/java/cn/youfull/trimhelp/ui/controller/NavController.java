@@ -5,21 +5,32 @@ import cn.youfull.trimhelp.ui.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.activation.DataSource;
+import javax.annotation.Resource;
 
 @Controller
 public class NavController {
 
-    @Autowired
+
+    @RequestMapping(value = "sayhello",method = RequestMethod.GET)
+    @ResponseBody
+    public String sayhello(){
+        return "hello";
+    }
+
+    @Resource
     private UserService userService;
 
-    @RequestMapping("/toLogin")
+    @RequestMapping("toLogin")
     public String toLogin(){
         return "login";
     }
 
-    @RequestMapping("/login")
+    @RequestMapping("login")
     public String login(String account,String passWord){
-        System.out.println(1);
         User user = userService.loginByAccountAndPassWord(account, passWord);
         if (user!=null){
              System.out.println(2);
