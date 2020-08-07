@@ -4,11 +4,11 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 47.105.174.82:8848
+        server-addr: 192.168.206.128:8848
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/decoratestate?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://192.168.206.128:3306/decoratestate?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
     password: root
     hikari:
@@ -25,5 +25,4 @@ server:
 
 mybatis-plus:
   type-aliases-package: cn.youfull.trimhelp.entity
-  configuration:
-    map-underscore-to-camel-case: false
+
