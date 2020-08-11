@@ -15,8 +15,11 @@
         <module>trimhelp-core</module>
         <module>trimhelp-nacos</module>
         <module>trimhelp-starter</module>
+        <module>trimhelp-mapper</module>
+        <module>trimhelp-ui</module>
+        <module>trimhelp-user</module>
      <!--
-
+        <module>trimhelp-provider</module>
         <module>trimhelp-examples</module>-->
     </modules>
 

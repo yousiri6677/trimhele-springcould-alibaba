@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: trimhelp-user-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.206.128:8848
+  # Mysql数据库
+  datasource:
+    data-username: root
+    data-password: root
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.206.128:3306/decoratestate?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+    hikari:
+      minimum-idle: 5
+      idle-timeout: 600000
+      maximum-pool-size: 10
+      auto-commit: true
+      pool-name: MyhikariCP
+      max-lifetime: 1800000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+mybatis-plus:
+  type-aliases-package: com.youfull.trimhelp.entity
+

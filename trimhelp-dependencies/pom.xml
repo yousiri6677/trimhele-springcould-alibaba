@@ -27,6 +27,10 @@
         <mysql-connector-java.version>8.0.11</mysql-connector-java.version>
         <swagger.version>2.9.2</swagger.version>
         <redis-starter.version>2.1.1.RELEASE</redis-starter.version>
+        <httpSyncClint.version>4.1.4</httpSyncClint.version>
+        <mybatis-plus.version>3.2.0</mybatis-plus.version>
+        <thymeleaf-version>2.1.1.RELEASE</thymeleaf-version>
+        <nekohtml.version>1.9.22</nekohtml.version>
     </properties>
 
     <dependencyManagement>
@@ -85,6 +89,13 @@
                 <version>${alibaba-spring-context-support.version}</version>
             </dependency>
 
+            <!-- redis -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis-starter.version}</version>
+            </dependency>
+
 
             <!--commons-->
             <dependency>
@@ -98,6 +109,11 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.4</version>
+            </dependency>
 
             <!--swagger-->
             <dependency>
@@ -110,10 +126,41 @@
                 <artifactId>springfox-swagger-ui</artifactId>
                 <version>${swagger.version}</version>
             </dependency>
+
+            <!--http-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpasyncclient</artifactId>
+                <version>${httpSyncClint.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpmime</artifactId>
+                <version>4.5</version>
+            </dependency>
+
+            <!--db-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java.version}</version>
+            </dependency>
+
+            <!--html-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-redis</artifactId>
-                <version>${redis-starter.version}</version>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${thymeleaf-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.sourceforge.nekohtml</groupId>
+                <artifactId>nekohtml</artifactId>
+                <version>${nekohtml.version}</version>
             </dependency>
         </dependencies>
 
@@ -132,12 +179,27 @@
                     </plugin>
 
                     <!-- Source -->
+                    <!-- <plugin>
+                         <groupId>org.apache.maven.plugins</groupId>
+                         <artifactId>maven-source-plugin</artifactId>
+                         <version>3.0.1</version>
+                         <executions>
+                             <execution>
+                                 <phase>package</phase>
+                                 <goals>
+                                     <goal>jar-no-fork</goal>
+                                 </goals>
+                             </execution>
+                         </executions>
+                     </plugin>-->
+
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-source-plugin</artifactId>
-                        <version>3.0.1</version>
+                        <version>3.2.0</version>
                         <executions>
                             <execution>
+                                <id>attach-sources</id>
                                 <phase>package</phase>
                                 <goals>
                                     <goal>jar-no-fork</goal>
